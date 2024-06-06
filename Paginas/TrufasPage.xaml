@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="APPDoceria.Paginas.TrufasPage"
+             Title="Trufas e bombons">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F9DED3"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image HeightRequest="100" Source="paginalogo"/>
+            <Label Margin="0, 10, 0, 20" Text="Trufas e bombons" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="bomcereja"/>
+            <Label Margin="0, 10, 0, 0" Text="Bombom de cereja" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Nosso maravilhoso Bombom de Cereja coberto com Chocolate" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="tmarac"/>
+            <Label Margin="0, 10, 0, 0" Text="Bombom maracujá" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Delicioso Brigadeiro de Maracujá coberto com Chocolate Ao Leite" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="tcaramelo"/>
+            <Label Margin="0, 10, 0, 0" Text="Bombom Caramelo Toffe" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Bombom de chocolate com recheio de toffe e finalizado com flor de sal" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="tmoragold"/>
+            <Label Margin="0, 10, 0, 0" Text="Morango Coberto" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Nosso morango coberto especial com brigadeiro de chocolate ao leite e coberto com chocolate meio amargo" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="tcoracao"/>
+            <Label Margin="0, 10, 0, 0" Text="Trufa Ninho com morango" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Coração de Chocolate Red com recheio de Brigadeiro de Ninho Cremoso com Geleia de Morango." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="bompistache"/>
+            <Label Margin="0, 10, 0, 0" Text="Bombom pistache" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Brigadeiro Gourmet de Pistache 6coberto com Chocolate com toque esverdeado, finalizado com Pistache Torrado" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Button Margin="0, 0, 0, 20" x:Name="btnVoltar" Text="Voltar" FontAttributes="Bold" TextColor="White" WidthRequest="200" BackgroundColor="#FAB4B6" Clicked="btnVoltar_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

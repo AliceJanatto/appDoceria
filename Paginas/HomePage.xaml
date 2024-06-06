@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="APPDoceria.Paginas.HomePage"
+             NavigationPage.HasNavigationBar="False"
+             Title="Doce Encanto - Doceria Gourmet">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F9DED3"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image HeightRequest="130" Source="paginalogo"/>
+            
+            <Label  Text="Conheça nosso trabalho:" FontSize="Title" FontAttributes="Bold"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+            <Label  Text="Seja bem-vindo à nossa doceria especializada em doces finos, onde cada doce é mais do que uma sobremesa, é uma obra-prima comestível, criada especialmente para você saborear e celebrar os momentos doces da vida." 
+                    FontSize="Subtitle"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Margin="20"/>
+            
+            <Label  Text="Nossa missão é transformar ingredientes simples em obras-primas gastronômicas, elevando a doçura a um nível de sofisticação e elegância, onde cada mordida é uma experiência memorável, onde a arte se mistura com o sabor para criar momentos de deleite inesquecíveis. " 
+                    FontSize="Subtitle"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Margin="20,0,20,20"/>
+
+            <Label  Text="Na Doceria Doce Encanto, cada detalhe é cuidadosamente elaborado para despertar os sentidos e encantar os paladares mais exigentes." 
+                    FontSize="Subtitle"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Margin="20,0,20,20"/>
+
+            <Label  Text="Este APP é apenas um catálogo, para nos contratar, envie uma mensagem no nosso Whatsapp, que está disponível na página “Contrate-nos”" 
+                    FontSize="Subtitle"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Margin="20,0,20,20"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+            
+</ContentPage>

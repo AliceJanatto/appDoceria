@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="APPDoceria.Paginas.MenuPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="Menu">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F9DED3"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image HeightRequest="130" Source="paginalogo"/>
+
+            <Label  Text="Menu delícia" FontSize="Title" FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="0, 10, 0, 20"/>
+
+            <Image HeightRequest="130" Source="caixaluxo"/>
+            <Button x:Name="btnKits" Margin="5, 10, 5, 30" Text="Kits e Caixas"  TextColor="White" FontAttributes="Bold" WidthRequest="150" BackgroundColor="#FAB4B6" Clicked="btnKits_Clicked"/>
+
+            <Image HeightRequest="130" Source="brigcolher"/>
+            <Button x:Name="btnBrigadeiros" Margin="5, 10, 5, 30" Text="Brigadeiros"  TextColor="White" FontAttributes="Bold" WidthRequest="150" BackgroundColor="#FAB4B6" Clicked="btnBrigadeiros_Clicked"/>
+
+            <Image HeightRequest="130" Source="bcenouracob"/>
+            <Button x:Name="btnBolos" Margin="5, 10, 5, 30" Text="Bolos e Cupcakes"  TextColor="White" FontAttributes="Bold" WidthRequest="150" BackgroundColor="#FAB4B6" Clicked="btnBolos_Clicked"/>
+
+            <Image HeightRequest="130" Source="tcoracao"/>
+            <Button x:Name="btntrufas" Margin="5, 10, 5, 30" Text="Trufas e Bombons"  TextColor="White" FontAttributes="Bold" WidthRequest="150" BackgroundColor="#FAB4B6" Clicked="btntrufas_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

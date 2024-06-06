@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="APPDoceria.Paginas.EditaUsuario"
+             NavigationPage.HasNavigationBar="False"
+             Title="Cadastre - se">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F9DED3"/>
+    </ContentPage.Behaviors>
+
+
+    <VerticalStackLayout>
+        <VerticalStackLayout Padding="15" Spacing="5">
+
+            <Image HeightRequest="200" Source="paginalogo"/>
+
+            <Label Text="Crie sua conta" Margin="0, 0, 0, 30" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title"/>
+
+            <Label x:Name="lblNome" Text=""  TextColor="White" FontSize="Subtitle" />
+
+            <Entry x:Name="txtNome" Text="{Binding Nome}" BackgroundColor="#F0F0F0" Placeholder="Digite seu nome" Keyboard="Text"/>
+
+            <Label x:Name="lblEmail" Text="" TextColor="White" FontSize="Subtitle" />
+
+            <Entry x:Name="txtEmail" Text="{Binding Email}" BackgroundColor="#F0F0F0" Placeholder="Digite seu email" Keyboard="Email"/>
+
+            <Label x:Name="lblSenha" Text="" TextColor="White" FontSize="Subtitle"/>
+
+            <Entry x:Name="txtSenha" Text="{Binding Senha}" BackgroundColor="#F0F0F0" Placeholder="Digite sua senha" IsPassword="True"/>
+
+            <Button x:Name="btnCadastrar" Text="Cadastrar" FontAttributes="Bold" Margin="5, 30, 5, 20" TextColor="White" WidthRequest="200" BackgroundColor="#FAB4B6" Clicked="btnCadastrar_Clicked"/>
+
+            <Button x:Name="btnVoltar" Text="Voltar" FontAttributes="Bold" TextColor="White" WidthRequest="200" BackgroundColor="#FAB4B6" Clicked="btnVoltar_Clicked"/>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="APPDoceria.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:APPDoceria"
+    xmlns:pages="clr-namespace:APPDoceria.Paginas"
+    Shell.FlyoutBehavior="Flyout"
+    NavigationPage.HasNavigationBar="False"
+    Title="APPDoceria">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Shell">
+                <Setter Property="Shell.FlyoutBackgroundColor" Value="#F9DED3"/>
+                <Setter Property="Shell.BackgroundColor" Value="#F9DED3" />
+                <Setter Property="Shell.ForegroundColor" Value="Black" />
+                <Setter Property="Shell.TitleColor" Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <FlyoutItem Title="Home" Icon="homeicon.png">
+        <ShellContent Route="home" ContentTemplate="{DataTemplate pages:HomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Menu" Icon="menuicon.png">
+        <ShellContent Route="menu" ContentTemplate="{DataTemplate pages:MenuPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Contrate-nos" Icon="ctticon.png">
+        <ShellContent Route="contato" ContentTemplate="{DataTemplate pages:ContatoPage}" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Perfil" Icon="perfilicon.png">
+        <ShellContent Route="perfil" ContentTemplate="{DataTemplate pages:PerfilPage}" />
+    </FlyoutItem>
+
+
+    
+
+</Shell>

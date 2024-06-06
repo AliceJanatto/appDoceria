@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="APPDoceria.Paginas.BolosPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="Bolos e Cupcakes">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F9DED3"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image HeightRequest="100" Source="paginalogo"/>
+
+            <Label Margin="0, 10, 0, 20" Text="Bolos e Cupcakes" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="bbentocake"/>
+            <Label Margin="0, 10, 0, 0" Text="Bentô - Cake" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Ela é divertida, descontraída e pode ficar a sua cara: Bentô Cake! Você escolhe o sabor da massa, o recheio e a sua frase preferida." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="bchocolate"/>
+            <Label Margin="0, 10, 0, 0" Text="Chocolatudo" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Massa bem chocolatuda coberta com brigadeiro." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="cupchoc"/>
+            <Label Margin="0, 10, 0, 0" Text="Cupcake Chocolate" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Delicioso e fofinho, com Brigadeiro Gourmet no Topo. Fica maravilhoso, as crianças amam e os adultos também." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="bcenouracob"/>
+            <Label Margin="0, 10, 0, 0" Text="Cenoura com brigadeiro" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Nossa massa fofinha e aveludada de cenoura com cobertura de brigadeiro cremoso ao leite." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="bchurros"/>
+            <Label Margin="0, 10, 0, 0" Text="Churros" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Massa com toque de canela com recheio e cobertura de doce de leite." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="cupbaunilha"/>
+            <Label Margin="0, 10, 0, 0" Text="Cupcake baunilha" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Delicioso e fofinho, com Brigadeiro Gourmet no Topo. Fica maravilhoso, as crianças amam e os adultos também." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Button Margin="0, 0, 0, 20" x:Name="btnVoltar" Text="Voltar" FontAttributes="Bold" TextColor="White" WidthRequest="200" BackgroundColor="#FAB4B6" Clicked="btnVoltar_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

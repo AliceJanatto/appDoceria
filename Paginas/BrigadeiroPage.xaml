@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="APPDoceria.Paginas.BrigadeiroPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="Brigadeiros">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F9DED3"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image HeightRequest="100" Source="paginalogo"/>
+
+            <Label Margin="0, 10, 0, 20" Text="Brigadeiros" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="brigbeijinho"/>
+            <Label Margin="0, 10, 0, 0" Text="Beijinho" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="A tradicional e deliciosa massa de brigadeiro de coco finalizada com um cravinho" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="brigcolorido"/>
+            <Label Margin="0, 10, 0, 0" Text="Colorido" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Tradicional massa de brigadeiro com confeitos coloridos" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="brignapolitano"/>
+            <Label Margin="0, 10, 0, 0" Text="Napolitano" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="A deliciosa mistura dos brigadeiros preto, branco e o moranguinho." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="brigcolher"/>
+            <Label Margin="0, 10, 0, 0" Text="Tradicional Cremoso" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Copinho especial com Brigadeiro Gourmet Cremoso Ao Leite de Colher." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Image HeightRequest="130" Source="brigchurros"/>
+            <Label Margin="0, 10, 0, 0" Text="Churros" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"/>
+            <Label Margin="10, 0, 0, 20" Text="Deliciosa massa de doce de leite com canela e finalizada com doce de leite." VerticalOptions="Center" HorizontalOptions="Center" />
+
+            <Button Margin="0, 0, 0, 20" x:Name="btnVoltar" Text="Voltar" FontAttributes="Bold" TextColor="White" WidthRequest="200" BackgroundColor="#FAB4B6" Clicked="btnVoltar_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

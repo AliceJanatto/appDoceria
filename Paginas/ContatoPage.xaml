@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="APPDoceria.Paginas.ContatoPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="Contrate - nos">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F9DED3"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout>
+        <Image HeightRequest="150" Source="paginalogo"/>
+
+        <Label Text="Contrate - nos" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" />
+
+        <Label Text="Para obter nossos deliciosos docinhos, envie uma mensagem no número:" Margin="40,10,40,20" VerticalOptions="Center" HorizontalOptions="Center" />
+
+        <Label Text="(00)00000-0000" FontSize="20" Margin="20,0,20,20" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" />
+
+        <Label Text="Ou então, envie um email para:" Margin="20,0,20,20" VerticalOptions="Center" HorizontalOptions="Center" />
+
+        <Label Text="doceencanto@doceria.com" Margin="20,0,20,20" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" />
+
+
+    </VerticalStackLayout>
+</ContentPage>

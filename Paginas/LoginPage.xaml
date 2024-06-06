@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="APPDoceria.Paginas.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="Login">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F9DED3"/>
+    </ContentPage.Behaviors>
+
+            <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="5">
+            <Image HeightRequest="200" Source="paginalogo"/>
+
+            <Label Text="Faça seu Login" Margin="0, 0, 0, 30" FontAttributes="Bold" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title"/>
+
+            <Label x:Name="lblEmail" Margin="15, 0, 0, 0" Text="Email" TextColor="Black" FontSize="Subtitle" />
+
+            <Entry x:Name="txtEmail" BackgroundColor="#F0F0F0"  Placeholder="Digite seu E-mail" Keyboard="Email"/>
+
+            <Label x:Name="lblSenha" Margin="15, 15, 0, 0" Text="Senha" TextColor="Black" FontSize="Subtitle"/>
+
+            <Entry x:Name="txtSenha" BackgroundColor="#F0F0F0" Placeholder="Digite sua Senha" IsPassword="True"/>
+
+            <Button x:Name="btnEntrar" Margin="5, 30, 5, 20" Text="Acessar"  TextColor="White" FontAttributes="Bold" WidthRequest="250" BackgroundColor="#FAB4B6" Clicked="btnEntrar_Clicked"/>
+
+            <Label Margin="65, 20, 0, 0" Text="Ainda não tem uma conta?" TextColor="Black" FontSize="Subtitle"/>
+
+            <Button x:Name="btnRegistrar" Margin="5, 0, 5, 20" Text="Crie uma agora mesmo" TextColor="White" FontAttributes="Bold" WidthRequest="200" HeightRequest="40" BackgroundColor="#FAB4B6" Clicked="btnRegistrar_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
